@@ -1,0 +1,9 @@
+{
+  "userName": "",
+  "password": "",
+  "server": ".database.windows.net",
+  "options": {
+    "database": "",
+    "encrypt": true
+  }
+}

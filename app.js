@@ -2,6 +2,7 @@ let express = require('express');
 let app = express();
 let bodyParser = require("body-parser");
 let cors = require('cors');
+DButilsAzure = require('./dBUtils');
 
 app.use(bodyParser.urlencoded({extend: true}));
 app.use(bodyParser.json());
