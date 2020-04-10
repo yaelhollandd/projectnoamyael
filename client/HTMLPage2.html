@@ -12,6 +12,7 @@
 ​
   <body style="padding:30px;">
 
+  <script src="page2.js"></script>
 
 <div class="alert alert-info" role="alert">
   <h4 class="alert-heading"></h4>
@@ -31,7 +32,7 @@
          <h5 class="card-subtitle mb-2 text-muted">Samuel E. Wright </h5>
         <h6> Duration: 4.04 </h6>
         <h6> Album: the little mairmaid </h6>
-        <h6 style="color:"> Your price: <input type="number" name="s1" min="1" max="99" required> </h6>
+        <h6 style="color:"> Your price: <input id="inp1" type="number" name="s1" min="1" max="99" required> </h6>
       </div>
     </div>
   </div>
@@ -233,7 +234,7 @@
       </div>
     </div>
      
-      <input type="submit" value="Submit request" / class="btn btn-info">
+      <input type="submit" value="Submit request" onsubmit="tmp()" / class="btn btn-info">
     </form>
    ​
       

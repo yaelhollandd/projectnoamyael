@@ -19,9 +19,37 @@ app.use((req, res, next) => {
 //Post request -> get data from client by req.body."element"
 app.get('/', (req, res) => {
     res.show("welcome.html");
+
 });
 
 
+app.post('/insertPage2DB', async (req, res) => {
+    let ans ;
+    let data = req.body
+    await dbUtils.sql(`insert into ${data.input1} ` )
+        .execute()
+        .then(function (results) {
+            ans = 200;
+        }).fail(function (err) {
+            ans = 400;
+            console.log(err);
+        });
+    res.status(ans).send("finish");
+
+});
+/*
+let ans = new Object();
+await dbUtils.sql(`Select * from user_Coach`)
+    .execute()
+    .then(function (results) {
+        ans = 200;
+    }).fail(function (err) {
+        ans = 400;
+        console.log(err);
+    });
+return ans;
+
+ */
 
 
 app.listen(process.env.PORT || 3000, () => {

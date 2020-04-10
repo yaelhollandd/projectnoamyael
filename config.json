@@ -1,9 +1,9 @@
 {
-  "userName": "",
-  "password": "",
-  "server": ".database.windows.net",
+  "userName": "noamyael",
+  "password": "vUKBs111",
+  "server": "noamyael.database.windows.net",
   "options": {
-    "database": "",
+    "database": "project1",
     "encrypt": true
   }
 }
