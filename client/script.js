@@ -22,7 +22,7 @@ async function postData(url = '', data = {}) {
 }
 
 //if you want to send data
-postData('http://localhost:3000/getHello', { answer: 42 ,
+postData('https://project1noamandyael.herokuapp.com/', { answer: 42 ,
 user : "me"})
     .then((data) => {
         console.log(data); // JSON data parsed by `response.json()` call
