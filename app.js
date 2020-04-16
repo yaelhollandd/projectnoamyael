@@ -24,10 +24,13 @@ app.get('/', (req, res) => {
 
 
 app.post('/insertPage2DB', async (req, res) => {
+
+    alert("in data b");
     let ans ;
-    let data = req.body
-    await dbUtils.sql(`insert into ${data.input1} ` )
-        .execute()
+    let data = req.body 
+    await dbUtils.sql(`insert into Songs_Money (id , song1, song2, song3, song4, song5, song6, song7, song8, song9, song10, song11, song12, song13, song14, song15, song16, song17, song18,song19, song20, song21, song22, song23, song24, song25) 
+    VALUES( 1, '${data.inp_song1}' ,0,0,0,0,0,0,0,00,0,0,0,0,0,0,0,0,0,0,00,0,0,0,0,0);` )
+        .execute() 
         .then(function (results) {
             ans = 200;
         }).fail(function (err) {
@@ -37,6 +40,19 @@ app.post('/insertPage2DB', async (req, res) => {
     res.status(ans).send("finish");
 
 });
+
+
+
+app.post('/submit-student-data', function (req, res) {
+   
+    
+    res.show("welcome.html");
+});
+
+
+
+
+
 /*
 let ans = new Object();
 await dbUtils.sql(`Select * from user_Coach`)

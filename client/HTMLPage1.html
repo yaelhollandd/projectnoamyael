@@ -28,7 +28,10 @@
 </div>
 
 
-<form name="myForm"  action="HTMLPage2.html" method="POST"> 
+<form  name="Form1"> 
+
+
+
 
       <div class="row row-cols-1 row-cols-md-3">
   <div class="col mb-4">
@@ -508,7 +511,7 @@
 </audio> </h6>
                     <h7> <b> Your rating:</b>
      
-        <select name=s1 required>
+        <select name=s1  >
            <option disabled selected value> -- select an option -- </option>
     <option value="1">&#11088</option>
     <option value="2">&#11088 &#11088</option>
@@ -674,8 +677,18 @@
       </div>
     </div>
     
-  <input type="submit" value="Submit request" / class="btn btn-info">
+  <input type="Submit" value="Submit request"  class="btn btn-info" onsubmit="redirect()"/ >
+  <script>
+
+  function redirect()
+  {
+    
+     
+          window.location.href = 'HTMLPage2.html';
       
+  }
+</script>
+  
     </form>
      
  

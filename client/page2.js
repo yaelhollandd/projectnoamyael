@@ -30,13 +30,22 @@ user : "me"})
 
 
 function tmp(event) {
-    event.preventDefault();
- let inp1 = document.getElementById("inp1");
+   
+    /*event.preventDefault();*/
+    
+ let inp_song1 = document.getElementById("inp_song1");
+
+  alert( inp_song1.value);
  let data = {
-     input1 :  parseInt(inp1.value)
+    
+    inp_song1 :  parseInt(inp_song1.value)
+    
+     
  }
- postData('https://project1noamandyael.herokuapp.com/insertPage2DB', data)
+ postData('/insertPage2DB', data)
         .then((data) => {
             console.log(data); // JSON data parsed by `response.json()` call
         });
+
+       
 }
