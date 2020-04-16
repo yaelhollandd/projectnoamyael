@@ -1,3 +1,12 @@
+$( document ).ready(function() {
+    console.log("ready")
+
+    $( "form" ).submit(function( event ) {
+        event.preventDefault();
+        submit()
+    });
+
+});
 
 async function postData(url = '', data = {}) {
     // Default options are marked with *
@@ -17,35 +26,16 @@ async function postData(url = '', data = {}) {
     return response.json(); // parses JSON response into native JavaScript objects
 }
 
-//if you want to send data
-/*
-postData('https://project1noamandyael.herokuapp.com/', { answer: 42 ,
-user : "me"})
-    .then((data) => {
-        console.log(data); // JSON data parsed by `response.json()` call
-    });
-
-
- */
-
-
-function tmp(event) {
-   
-    /*event.preventDefault();*/
-    
- let inp_song1 = document.getElementById("inp_song1");
-
-  alert( inp_song1.value);
- let data = {
-    
-    inp_song1 :  parseInt(inp_song1.value)
-    
-     
- }
- postData('/insertPage2DB', data)
-        .then((data) => {
-            console.log(data); // JSON data parsed by `response.json()` call
-        });
-
-       
+function submit() {
+    let inp_song1 = document.getElementById("inp_song1");
+    let data = {
+        inp_song1: parseInt(inp_song1.value)
+    }
+    postData('/insertPage2DB', data)
+        .then((data) => {})
+        .catch((err) => {console.log(err)})
+    fetch('/HTMLPage3.html')
+        .then((res) => {
+            window.location = res.url
+        })
 }

@@ -24,12 +24,10 @@ app.get('/', (req, res) => {
 
 
 app.post('/insertPage2DB', async (req, res) => {
-
-    alert("in data b");
     let ans ;
     let data = req.body 
     await dbUtils.sql(`insert into Songs_Money (id , song1, song2, song3, song4, song5, song6, song7, song8, song9, song10, song11, song12, song13, song14, song15, song16, song17, song18,song19, song20, song21, song22, song23, song24, song25) 
-    VALUES( 1, '${data.inp_song1}' ,0,0,0,0,0,0,0,00,0,0,0,0,0,0,0,0,0,0,00,0,0,0,0,0);` )
+    VALUES( 1, '5' ,0,0,0,0,0,0,0,00,0,0,0,0,0,0,0,0,0,0,00,0,0,0,0,0);` )
         .execute() 
         .then(function (results) {
             ans = 200;
@@ -41,11 +39,12 @@ app.post('/insertPage2DB', async (req, res) => {
 
 });
 
+app.get('/HTMLPage3.html',function (req,res) {
+    res.show("HTMLPage3.html");
 
+})
 
-app.post('/submit-student-data', function (req, res) {
-   
-    
+app.get('/submit-student-data', function (req, res) {
     res.show("welcome.html");
 });
 
