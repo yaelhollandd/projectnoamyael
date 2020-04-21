@@ -28,8 +28,16 @@ async function postData(url = '', data = {}) {
 
 function submit() {
     let inp_song_nr21 = document.getElementById("inp_song_nr21");
+    let inp_song_nr22 = document.getElementById("inp_song_nr22");
+    let inp_song_nr23 = document.getElementById("inp_song_nr23");
+    let inp_song_nr24 = document.getElementById("inp_song_nr24");
+    let inp_song_nr25 = document.getElementById("inp_song_nr25");
     let data = {
-        inp_song_nr21: parseInt(inp_song_nr21.value)
+        inp_song_nr21: parseInt(inp_song_nr21.value),
+        inp_song_nr22: parseInt(inp_song_nr22.value),
+        inp_song_nr23: parseInt(inp_song_nr23.value),
+        inp_song_nr24: parseInt(inp_song_nr24.value),
+        inp_song_nr25: parseInt(inp_song_nr25.value)
     }
     postData('/insertPage3DB', data)
         .then((data) => {})

@@ -31,11 +31,19 @@
      <!--  <!DOCTYPE html> --> 
 
 
-        <form id= "formPage6">
+        <form id= "formPage5">
   <div class="form-row">
     <div class="col-md-4 mb-3">
       <label for="validationDefault01">Age</label>
-      <input type="Number" min="18" max="99" class="form-control" id="inp_inf1" value="Mark" required>
+      <select class="custom-select" id="inp_inf1" required>
+        <option selected disabled value="">Choose...</option>
+         <option value="Under 18">Under 18</option>
+           <option value="18-25">18-25</option>
+           <option value="25-30">25-30</option>
+           <option value="30-35">30-35</option>
+           <option value="25-30">25-30</option>
+           <option value="above 40">above 40</option>
+      </select>
     </div>
     <div class="col-md-4 mb-3">
       <label for="validationDefault02">Gender</label>
@@ -43,15 +51,16 @@
         <option selected disabled value="">Choose...</option>
          <option value="F">F</option>
            <option value="M">M</option>
+           <option value="O">O</option>
       </select>
     </div>
     <div class="col-md-4 mb-3">
-      <label for="validationDefaultUsername">Do you have a degree?</label>
+      <label for="validationDefaultUsername">Education level</label>
       <div class="input-group">
-       <select class="custom-select" id="validationDefault04" required>
+       <select class="custom-select"  id="inp_inf3" required>
         <option selected disabled value="">Choose...</option>
-         <option value="1">Yes</option>
-           <option value="2">No</option>
+         <option value="Yes">Yes</option>
+           <option value="No">No</option>
       </select>
       </div>
 
@@ -61,33 +70,36 @@
        <div class="form-row">
     <div class="col-md-4 mb-3">
       <label for="validationDefault01"> Rate your love for country music</label>
-      <select class="custom-select" id="validationDefault04" required>
+      <select class="custom-select" id="inp_inf4" required>
         <option selected disabled value="">Choose...</option>
          <option value="1">1</option>
            <option value="2">2</option>
             <option value="3">3</option>
            <option value="4">4</option>
-          <option value="4">5</option>
+          <option value="5">5</option>
       </select>
     </div>
     <div class="col-md-4 mb-3">
       <label for="validationDefault02"> Rate your love for Rock music</label>
-      <select class="custom-select" id="validationDefault04" required>
+      <select class="custom-select" id="inp_inf5" required>
         <option selected disabled value="">Choose...</option>
          <option value="1">1</option>
            <option value="2">2</option>
             <option value="3">3</option>
            <option value="4">4</option>
-          <option value="4">5</option>
+          <option value="5">5</option>
       </select>
     </div>
     <div class="col-md-4 mb-3">
       <label for="validationDefaultUsername"> Rate your love for pop music</label>
       <div class="input-group">
-       <select class="custom-select" id="validationDefault04" required>
+       <select class="custom-select" id="inp_inf6" required>
         <option selected disabled value="">Choose...</option>
-         <option value="1">Yes</option>
-           <option value="2">No</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+         <option value="3">3</option>
+        <option value="4">4</option>
+       <option value="5">5</option>
       </select>
       </div>
         </div>
@@ -96,25 +108,28 @@
 
           <div class="col-md-4 mb-3">
       <label for="validationDefault02">Do you think the recommendations you received were accurate?</label>
-      <select class="custom-select" id="validationDefault04" required>
+      <select class="custom-select" id="inp_inf7" required>
         <option selected disabled value="">Choose...</option>
-         <option value="1">Yes</option>
-           <option value="2">No</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
       </select>
     </div>
     <div class="col-md-4 mb-3">
       <label for="validationDefault02">Do you have any prior experience in recommendation systems?</label>
-      <select class="custom-select" id="validationDefault04" required>
+      <select class="custom-select" id="inp_inf8" required>
         <option selected disabled value="">Choose...</option>
-         <option value="1">Yes</option>
-           <option value="2">No</option>
+         <option value="Yes">Yes</option>
+           <option value="No">No</option>
       </select>
     </div>
     <div class="col-md-4 mb-3">
       <label for="validationDefaultUsername">Were the recommendations 
           <br> helpful to you?  </label>
       <div class="input-group">
-       <select class="custom-select" id="validationDefault04" required>
+       <select class="custom-select" id="inp_inf9" required>
         <option selected disabled value="">Choose...</option>
          <option value="1">1</option>
            <option value="2">2</option>
@@ -131,21 +146,22 @@
 
 
 
-
-
-
-
           <div class="col-md-4 mb-3">
       <label for="validationDefault02">What is the size of the space you are in? Rate on a scale from 1 to 7 (1- smallest 7- largest)</label>
-      <select class="custom-select" id="validationDefault04" required>
+      <select class="custom-select" id="inp_inf10" required>
         <option selected disabled value="">Choose...</option>
-         <option value="1">Yes</option>
-           <option value="2">No</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+      <option value="3">3</option>
+     <option value="4">4</option>
+        <option value="5">5</option>
+      <option value="6">6</option>
+     <option value="7">7</option>
       </select>
     </div>
     <div class="col-md-4 mb-3">
       <label for="validationDefault02">Are you in a private or public space? Rate on a scale from 1 to 7 (1- Private 7- Public)</label>
-      <select class="custom-select" id="validationDefault04" required>
+      <select class="custom-select" id="inp_inf11" required>
         <option selected disabled value="">Choose...</option>
               <option value="1">1</option>
            <option value="2">2</option>
@@ -161,7 +177,7 @@
 
 Are you in a confined space or open space? Rate on a scale from 1 to 7 (1- closed space 7- Open space)</label>
       <div class="input-group">
-       <select class="custom-select" id="validationDefault04" required>
+       <select class="custom-select" id="inp_inf12" required>
         <option selected disabled value="">Choose...</option>
          <option value="1">1</option>
            <option value="2">2</option>
@@ -186,37 +202,96 @@ Are you in a confined space or open space? Rate on a scale from 1 to 7 (1- close
           <div class="col-md-4 mb-3">
       <label for="validationDefault02">Which device you performed the experiment on? 
 <br></br> </label>
-      <select class="custom-select" id="validationDefault04" required>
+      <select class="custom-select" id="inp_inf13" required>
         <option selected disabled value="">Choose...</option>
-         <option value="1">Yes</option>
-           <option value="2">No</option>
+        <option value="Desktop">Desktop</option>
+        <option value="Laptop">Laptop</option>
+        <option value="Smartphone">Smartphone</option>
+        <option value="Tablet">Tablet</option>
+        <option value="Other">Other</option>
       </select>
     </div>
     <div class="col-md-4 mb-3">
       <label for="validationDefault02">On average how many hours a day do you use your computer (not for work)</label>
-      <select class="custom-select" id="validationDefault04" required>
+      <select class="custom-select" id="inp_inf14" required>
         <option selected disabled value="">Choose...</option>
-           <option value="1">Desktop</option>
-           <option value="2">Laptop</option>
-           <option value="3">Smartphone</option>
-           <option value="4">Tablet</option>
-           <option value="5">Other</option>
+        <option value="0-1">0-1</option>
+        <option value="1-3">1-3</option>
+        <option value="4-6">4-6</option>
+        <option value="7+">7+</option>
       </select>
     </div>
     <div class="col-md-4 mb-3">
       <label for="validationDefaultUsername">On average, how many hours a day do you use a mobile phone (not for work)  </label>
       <div class="input-group">
-       <select class="custom-select" id="validationDefault04" required>
+       <select class="custom-select" id="inp_inf15" required>
         <option selected disabled value="">Choose...</option>
-        <option value="1">0-1</option>
-           <option value="2">1-3</option>
-           <option value="3">4-6</option>
-           <option value="4">7+</option>
+        <option value="0-1">0-1</option>
+           <option value="1-3">1-3</option>
+           <option value="4-6">4-6</option>
+           <option value="7+">7+</option>
       </select>
 
       </div>
 
  </div>
+
+
+
+
+
+
+ <div class="col-md-4 mb-3">
+    <label for="validationDefault02">You have reduced the amount of noise in your area Rate on a scale from 1 to 7 (1- quietest 7- loudest)
+ </label>
+    <select class="custom-select" id="inp_inf16" required>
+      <option selected disabled value="">Choose...</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+    <option value="3">3</option>
+   <option value="4">4</option>
+      <option value="5">5</option>
+    <option value="6">6</option>
+   <option value="7">7</option>
+   
+    </select>
+  </div>
+
+  
+  <div class="col-md-4 mb-3">
+    <label for="validationDefault02">What is the amount of light in the environment you are in? Rate on a scale from 1 to 7 (1- brightest 7- darkest) )</label>
+    <select class="custom-select" id="inp_inf17" required>
+      <option selected disabled value="">Choose...</option>
+      <option value="1">1</option>
+           <option value="2">2</option>
+ 		<option value="3">3</option>
+		<option value="4">4</option>
+           <option value="5">5</option>
+ 		<option value="6">6</option>
+		<option value="7">7</option>
+        
+    </select>
+  </div>
+  <div class="col-md-4 mb-3">
+    <label for="validationDefaultUsername">Rate the density in the environment you are going in, rate at 1-7 (1- not crowded at all 7- most crowded)  </label>
+    <div class="input-group">
+     <select class="custom-select" id="inp_inf18" required>
+      <option selected disabled value="">Choose...</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+    <option value="3">3</option>
+   <option value="4">4</option>
+      <option value="5">5</option>
+    <option value="6">6</option>
+   <option value="7">7</option>
+   
+    </select>
+
+    </div>
+
+</div>
+
+
 
 
 

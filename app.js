@@ -23,11 +23,14 @@ app.get('/', (req, res) => {
 });
 
 
-app.post('/insertPage2DB', async (req, res) => {
+
+
+
+app.post('/insertPage1DB', async (req, res) => {
     let ans ;
     let data = req.body 
-    await dbUtils.sql(`insert into Songs_Money (id , song1, song2, song3, song4, song5, song6, song7, song8, song9, song10, song11, song12, song13, song14, song15, song16, song17, song18,song19, song20) 
-    VALUES( 1, ${data.inp_song1} ,0,0,0,0,0,0,0,00,0,0,0,0,0,0,0,0,0,0,00,0,0,0,0,0);` )
+    await dbUtils.sql(`insert into ratings_songs (id , rating1, rating2, rating3, rating4, rating5, rating6, rating7, rating8, rating9, rating10, rating11, rating12, rating13, rating14, rating15, rating16, rating17, rating18,rating19, rating20) 
+    VALUES( 11, ${data.rating1} ,${data.rating2},${data.rating3},${data.rating4},${data.rating5},${data.rating6},${data.rating7},${data.rating8},${data.rating9},${data.rating10},${data.rating11},${data.rating12},${data.rating13},${data.rating14},${data.rating15},${data.rating16},${data.rating17},${data.rating18},${data.rating19},${data.rating20});` )
         .execute() 
         .then(function (results) {
             ans = 200;
@@ -38,6 +41,59 @@ app.post('/insertPage2DB', async (req, res) => {
     res.status(ans).send("finish");
 
 });
+
+
+
+
+
+app.post('/insertPage2DB', async (req, res) => {
+    let ans ;
+    let data = req.body 
+    await dbUtils.sql(`insert into Songs_Money (id , song1, song2, song3, song4, song5, song6, song7, song8, song9, song10, song11, song12, song13, song14, song15, song16, song17, song18,song19, song20) 
+    VALUES('yaelqqqq' , ${data.inp_song1}, ${data.inp_song2}, ${data.inp_song3}, ${data.inp_song4}, ${data.inp_song5}, ${data.inp_song6}, ${data.inp_song7},  ${data.inp_song8},  ${data.inp_song9}, ${data.inp_song10}, ${data.inp_song11}, ${data.inp_song12}, ${data.inp_song13}, ${data.inp_song14}, ${data.inp_song15}, ${data.inp_song16}, ${data.inp_song17}, ${data.inp_song18}, ${data.inp_song19}, ${data.inp_song20});` )
+
+        
+    .execute() 
+        .then(function (results) {
+            ans = 200;
+        }).fail(function (err) {
+            ans = 400;
+            console.log(err);
+        });
+    res.status(ans).send("finish");
+
+});
+
+
+
+
+app.post('/insertPage22DB', async (req, res) => {
+    let ans ;
+    let data = req.body 
+    await dbUtils.sql(`insert into Songs_Money (id , song1) 
+    VALUES(555 , ${data.x});` )
+
+        
+    .execute() 
+        .then(function (results) {
+            ans = 200;
+        }).fail(function (err) {
+            ans = 400;
+            console.log(err);
+        });
+    res.status(ans).send("finish");
+
+});
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -45,7 +101,7 @@ app.post('/insertPage3DB', async (req, res) => {
     let ans ;
     let data = req.body 
     await dbUtils.sql(`insert into Songs_Money_nr (id , song1_nr, song2_nr, song3_nr, song4_nr, song5_nr) 
-    VALUES( 666, ${data.inp_song_nr21},0,0,0,0);` )
+    VALUES('yaell', ${data.inp_song_nr21}, ${data.inp_song_nr22}, ${data.inp_song_nr23}, ${data.inp_song_nr24}, ${data.inp_song_nr25});` )
         .execute() 
         .then(function (results) {
             ans = 200;
@@ -56,6 +112,7 @@ app.post('/insertPage3DB', async (req, res) => {
     res.status(ans).send("finish");
 
 });
+
 
 
 
@@ -82,7 +139,7 @@ app.post('/insertPage5DB', async (req, res) => {
          noise_rate,
          light_rate,
          density_rate ) 
-    VALUES(96, '1','${data.inp_inf2}','0',0,0,0,0,'0',0,0,0,0,'1','1','1',0,0,0);` )
+    VALUES(1030, '${data.inp_inf1}','${data.inp_inf2}','${data.inp_inf3}',${data.inp_inf4},${data.inp_inf5},${data.inp_inf6},${data.inp_inf7},'${data.inp_inf8}',${data.inp_inf9},${data.inp_inf10},${data.inp_inf11},${data.inp_inf12},'${data.inp_inf13}','${data.inp_inf14}','${data.inp_inf15}',${data.inp_inf16},${data.inp_inf17},${data.inp_inf18});` )
         .execute() 
         .then(function (results) {
             ans = 200;
@@ -111,9 +168,16 @@ app.get('/HTMLPage5.html',function (req,res) {
 })
 
 app.get('/Thanks.html',function (req,res) {
-    res.show("HTMLPage5.html");
+    res.show("Thanks.html");
 
 })
+
+
+app.get('/HTMLPage1.html',function (req,res) {
+    res.show("THTMLPage1.html");
+
+})
+
 
 app.get('/submit-student-data', function (req, res) {
     res.show("welcome.html");
@@ -144,3 +208,7 @@ app.listen(process.env.PORT || 3000, () => {
     console.log("Yael project");
     console.log("----------------------------------");
 });
+
+
+
+
