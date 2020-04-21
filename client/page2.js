@@ -25,6 +25,8 @@ async function postData(url = '', data = {}) {
     });
     return response.json(); // parses JSON response into native JavaScript objects
 }
+var randoms = [ ];
+
 
 function submit() {
     let inp_song1 = document.getElementById("inp_song1");
@@ -69,11 +71,42 @@ function submit() {
         inp_song18: parseInt(inp_song18.value),
         inp_song19: parseInt(inp_song19.value),
         inp_song20: parseInt(inp_song20.value),
-       
+     
                     }
     postData('/insertPage2DB', data)
         .then((data) => {})
         .catch((err) => {console.log(err)})
+   
+        let data2 = {
+            x1: randoms[1]  ,
+            x2: randoms[2]  ,
+            x3: randoms[3]  ,
+            x4: randoms[4]  ,
+            x5: randoms[5]  ,
+            x6: randoms[6]  ,
+            x7: randoms[7]  ,
+            x8: randoms[8]  ,
+            x9: randoms[9]  ,
+            x10: randoms[10]  , 
+            x11: randoms[11]  ,
+            x12: randoms[12]  ,
+            x13: randoms[13]  ,
+            x14: randoms[14]  ,
+            x15: randoms[15]  ,
+            x16: randoms[16]  ,
+            x17: randoms[17]  ,
+            x18: randoms[18]  ,
+            x19: randoms[19]  ,
+            x20: randoms[20]  
+        }
+    
+    
+        postData('/insertPage22DB', data2)
+        .then((data) => {})
+        .catch((err) => {console.log(err)})
+          
+
+
     fetch('/HTMLPage3.html')
         .then((res) => {
             window.location = res.url
@@ -100,7 +133,7 @@ function random1(){
     
     
     }
-    var randoms = [ ];
+  
    
     function random( n){
         var i;
@@ -113,10 +146,8 @@ function random1(){
         }
 
        randoms[n]=x; 
-       document.write(randoms[n]);
-        return x; 
       
-    
+  
     
         
         }

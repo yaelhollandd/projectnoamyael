@@ -30,7 +30,7 @@ app.post('/insertPage1DB', async (req, res) => {
     let ans ;
     let data = req.body 
     await dbUtils.sql(`insert into ratings_songs (id , rating1, rating2, rating3, rating4, rating5, rating6, rating7, rating8, rating9, rating10, rating11, rating12, rating13, rating14, rating15, rating16, rating17, rating18,rating19, rating20) 
-    VALUES( 11, ${data.rating1} ,${data.rating2},${data.rating3},${data.rating4},${data.rating5},${data.rating6},${data.rating7},${data.rating8},${data.rating9},${data.rating10},${data.rating11},${data.rating12},${data.rating13},${data.rating14},${data.rating15},${data.rating16},${data.rating17},${data.rating18},${data.rating19},${data.rating20});` )
+    VALUES( ${data.idt3}, ${data.rating1} ,${data.rating2},${data.rating3},${data.rating4},${data.rating5},${data.rating6},${data.rating7},${data.rating8},${data.rating9},${data.rating10},${data.rating11},${data.rating12},${data.rating13},${data.rating14},${data.rating15},${data.rating16},${data.rating17},${data.rating18},${data.rating19},${data.rating20});` )
         .execute() 
         .then(function (results) {
             ans = 200;
@@ -50,7 +50,7 @@ app.post('/insertPage2DB', async (req, res) => {
     let ans ;
     let data = req.body 
     await dbUtils.sql(`insert into Songs_Money (id , song1, song2, song3, song4, song5, song6, song7, song8, song9, song10, song11, song12, song13, song14, song15, song16, song17, song18,song19, song20) 
-    VALUES('yaelqqqq' , ${data.inp_song1}, ${data.inp_song2}, ${data.inp_song3}, ${data.inp_song4}, ${data.inp_song5}, ${data.inp_song6}, ${data.inp_song7},  ${data.inp_song8},  ${data.inp_song9}, ${data.inp_song10}, ${data.inp_song11}, ${data.inp_song12}, ${data.inp_song13}, ${data.inp_song14}, ${data.inp_song15}, ${data.inp_song16}, ${data.inp_song17}, ${data.inp_song18}, ${data.inp_song19}, ${data.inp_song20});` )
+    VALUES(${data.idt2} , ${data.inp_song1}, ${data.inp_song2}, ${data.inp_song3}, ${data.inp_song4}, ${data.inp_song5}, ${data.inp_song6}, ${data.inp_song7},  ${data.inp_song8},  ${data.inp_song9}, ${data.inp_song10}, ${data.inp_song11}, ${data.inp_song12}, ${data.inp_song13}, ${data.inp_song14}, ${data.inp_song15}, ${data.inp_song16}, ${data.inp_song17}, ${data.inp_song18}, ${data.inp_song19}, ${data.inp_song20});` )
 
         
     .execute() 
@@ -70,8 +70,9 @@ app.post('/insertPage2DB', async (req, res) => {
 app.post('/insertPage22DB', async (req, res) => {
     let ans ;
     let data = req.body 
-    await dbUtils.sql(`insert into Songs_Money (id , song1) 
-    VALUES(555 , ${data.x});` )
+    await dbUtils.sql(`insert into Random_Reate (id , random1 , random2 , random3,  random4 ,  random5 , random6 ,  random7 ,  random8 ,  random9 ,  random10 , random11, random12 , random13 , random14 , random15, random16, random17, random18, random19 , random20) 
+    VALUES(1, ${data.x1} , ${data.x2} , ${data.x3} , ${data.x4} , ${data.x5} , ${data.x6} , 
+        ${data.x7}, ${data.x8} , ${data.x9} , ${data.x10} , ${data.x11} , ${data.x12}, ${data.x13} , ${data.x14}, ${data.x15},${data.x16}, ${data.x17}, ${data.x18} , ${data.x19}, ${data.x20 } );` )
 
         
     .execute() 

@@ -1,3 +1,6 @@
+
+
+
 $( document ).ready(function() {
     console.log("ready")
 
@@ -25,6 +28,10 @@ async function postData(url = '', data = {}) {
     });
     return response.json(); // parses JSON response into native JavaScript objects
 }
+
+sessionStorage.setItem("idt", 70000);
+var idt =sessionStorage.getItem("idt");
+
 
 function submit() {
     let rating1 = document.getElementById("rating1");
@@ -69,9 +76,12 @@ function submit() {
         rating17: parseInt(rating17.value) ,
         rating18: parseInt(rating18.value) ,
         rating19: parseInt(rating19.value) ,
-        rating20: parseInt(rating20.value) 
+        rating20: parseInt(rating20.value) ,
+        idt: idt
 
     }
+
+    
     postData('/insertPage1DB', data)
         .then((data) => {})
         .catch((err) => {console.log(err)})
