@@ -63,7 +63,8 @@ function submit() {
        inp_inf15: inp_inf15.value,
        inp_inf16: parseInt(inp_inf16.value),
        inp_inf17: parseInt(inp_inf17.value),
-       inp_inf18: parseInt(inp_inf18.value)
+       inp_inf18: parseInt(inp_inf18.value),
+       User_ID: sessionStorage.getItem("User_ID")
     
     }
     postData('/insertPage5DB', data)

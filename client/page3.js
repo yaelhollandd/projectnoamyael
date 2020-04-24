@@ -37,7 +37,8 @@ function submit() {
         inp_song_nr22: parseInt(inp_song_nr22.value),
         inp_song_nr23: parseInt(inp_song_nr23.value),
         inp_song_nr24: parseInt(inp_song_nr24.value),
-        inp_song_nr25: parseInt(inp_song_nr25.value)
+        inp_song_nr25: parseInt(inp_song_nr25.value),
+        User_ID: sessionStorage.getItem("User_ID")
     }
     postData('/insertPage3DB', data)
         .then((data) => {})

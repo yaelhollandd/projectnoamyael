@@ -29,8 +29,7 @@ async function postData(url = '', data = {}) {
     return response.json(); // parses JSON response into native JavaScript objects
 }
 
-sessionStorage.setItem("idt", 70000);
-var idt =sessionStorage.getItem("idt");
+
 
 
 function submit() {
@@ -77,7 +76,7 @@ function submit() {
         rating18: parseInt(rating18.value) ,
         rating19: parseInt(rating19.value) ,
         rating20: parseInt(rating20.value) ,
-        idt: idt
+        User_ID: sessionStorage.getItem("User_ID")
 
     }
 

@@ -28,6 +28,8 @@ async function postData(url = '', data = {}) {
 var randoms = [ ];
 
 
+
+
 function submit() {
     let inp_song1 = document.getElementById("inp_song1");
     let inp_song2 = document.getElementById("inp_song2");
@@ -49,6 +51,7 @@ function submit() {
     let inp_song18 = document.getElementById("inp_song18");
     let inp_song19 = document.getElementById("inp_song19");
     let inp_song20 = document.getElementById("inp_song20");
+    
 
     let data = {
         inp_song1: parseInt(inp_song1.value),
@@ -71,6 +74,7 @@ function submit() {
         inp_song18: parseInt(inp_song18.value),
         inp_song19: parseInt(inp_song19.value),
         inp_song20: parseInt(inp_song20.value),
+        User_ID: sessionStorage.getItem("User_ID")
      
                     }
     postData('/insertPage2DB', data)
@@ -97,7 +101,8 @@ function submit() {
             x17: randoms[17]  ,
             x18: randoms[18]  ,
             x19: randoms[19]  ,
-            x20: randoms[20]  
+            x20: randoms[20]  ,
+            User_ID: sessionStorage.getItem("User_ID")
         }
     
     
