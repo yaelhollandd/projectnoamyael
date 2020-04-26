@@ -39,6 +39,7 @@ app.post('/insertPage2DB', async (req, res) => {
 
 });
 
+
 app.get('/HTMLPage3.html',function (req,res) {
     res.show("HTMLPage3.html");
 
