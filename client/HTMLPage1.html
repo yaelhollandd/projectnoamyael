@@ -11,11 +11,19 @@
   </head>
 
   <body style="padding:30px;">
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+<script src="page1.js"></script>
 
 <div class="alert alert-info" role="alert">
   <h4 class="alert-heading"></h4>
-  <p>   <p style="text-align:center;"> Rate the following 40 songs according to your preferences: <br/>
+  <p>   <p style="text-align:center;"> Rate the following 40 songs according to your preferences: 
+    
+    
+    <br/>
            
   <hr>
     <p style="text-align:center;"> 
@@ -28,7 +36,7 @@
 </div>
 
 
-<form  name="Form1"> 
+<form  name="Form1" id ='formpage1'> 
 
 
 
@@ -44,18 +52,18 @@
         <h6> Album: Frozen </h6>
         <h6 style="color:">    Sample:         
    <audio controls preload="metadata" style=" width:180px; height:60px; ">
-	<source src="audio.mp3" type="audio/mpeg">
+	<source src="projectfile/audio.mp3" type="audio/mpeg">
 	Your browser does not support the audio element.
 </audio> </h6>
           <h7> <b> Your rating:</b>
      
-        <select name=s1 id="validationTooltip04" required>
+        <select name=r1 id="rating1" required>
           <option disabled selected value> -- select an option -- </option>
     <option value="1">&#11088</option>
     <option value="2">&#11088 &#11088</option>
     <option value="3">&#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
+    <option value="4">&#11088 &#11088 &#11088 &#11088</option>
+    <option value="5">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
       </div>
     </div>
   </div>
@@ -75,48 +83,18 @@
         <h6> Album: Frozen </h6>
         <h6 style="color:">    Sample:         
    <audio controls preload="metadata" style=" width:180px; height:60px; ">
-	<source src="audio.mp3" type="audio/mpeg">
+	<source src="projectfile/audio.mp3" type="audio/mpeg">
 	Your browser does not support the audio element.
 </audio> </h6>
           <h7> <b> Your rating:</b>
      
-        <select name=s1 required>
+        <select name=r2 id= "rating2" required>
            <option disabled selected value> -- select an option -- </option>
     <option value="1">&#11088</option>
     <option value="2">&#11088 &#11088</option>
     <option value="3">&#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
-      </div>
-    </div>
-  </div>
-  
-          
-          <div class="col mb-4">
-
-
-
- <div class="card">
-     
-      <div class="card-body">
-        <h5 class="card-title">Let It Go  </h5>
-         <h5 class="card-subtitle mb-2 text-muted">Idina Menzel </h5>
-        <h6> Duration: 3.44 </h6>
-        <h6> Album: Frozen </h6>
-        <h6 style="color:">    Sample:         
-   <audio controls preload="metadata" style=" width:180px; height:60px; ">
-	<source src="audio.mp3" type="audio/mpeg">
-	Your browser does not support the audio element.
-</audio> </h6>
-          <h7> <b> Your rating:</b>
-     
-        <select name=s1 required>
-           <option disabled selected value> -- select an option -- </option>
-    <option value="1">&#11088</option>
-    <option value="2">&#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
+    <option value="4">&#11088 &#11088 &#11088 &#11088</option>
+    <option value="5">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
       </div>
     </div>
   </div>
@@ -126,7 +104,6 @@
 
 
 
-
  <div class="card">
      
       <div class="card-body">
@@ -136,18 +113,18 @@
         <h6> Album: Frozen </h6>
         <h6 style="color:">    Sample:         
    <audio controls preload="metadata" style=" width:180px; height:60px; ">
-	<source src="audio.mp3" type="audio/mpeg">
+	<source src="projectfile/audio.mp3" type="audio/mpeg">
 	Your browser does not support the audio element.
 </audio> </h6>
           <h7> <b> Your rating:</b>
      
-        <select name=s1 required>
+        <select name=r3 id= "rating3" required>
            <option disabled selected value> -- select an option -- </option>
     <option value="1">&#11088</option>
     <option value="2">&#11088 &#11088</option>
     <option value="3">&#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
+    <option value="4">&#11088 &#11088 &#11088 &#11088</option>
+    <option value="5">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
       </div>
     </div>
   </div>
@@ -167,18 +144,18 @@
         <h6> Album: Frozen </h6>
         <h6 style="color:">    Sample:         
    <audio controls preload="metadata" style=" width:180px; height:60px; ">
-	<source src="audio.mp3" type="audio/mpeg">
+	<source src="projectfile/audio.mp3" type="audio/mpeg">
 	Your browser does not support the audio element.
 </audio> </h6>
           <h7> <b> Your rating:</b>
      
-        <select name=s1 required>
+        <select name=r4 id= "rating4" required>
            <option disabled selected value> -- select an option -- </option>
     <option value="1">&#11088</option>
     <option value="2">&#11088 &#11088</option>
     <option value="3">&#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
+    <option value="4">&#11088 &#11088 &#11088 &#11088</option>
+    <option value="5">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
       </div>
     </div>
   </div>
@@ -203,13 +180,13 @@
 </audio> </h6>
           <h7> <b> Your rating:</b>
      
-        <select name=s1 required>
+        <select name=r5 id= "rating5"required>
            <option disabled selected value> -- select an option -- </option>
     <option value="1">&#11088</option>
     <option value="2">&#11088 &#11088</option>
     <option value="3">&#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
+    <option value="4">&#11088 &#11088 &#11088 &#11088</option>
+    <option value="5">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
       </div>
     </div>
   </div>
@@ -234,13 +211,13 @@
 </audio> </h6>
           <h7> <b> Your rating:</b>
      
-        <select name=s1 required>
+        <select name=r6 id= "rating6" required>
            <option disabled selected value> -- select an option -- </option>
     <option value="1">&#11088</option>
     <option value="2">&#11088 &#11088</option>
     <option value="3">&#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
+    <option value="4">&#11088 &#11088 &#11088 &#11088</option>
+    <option value="5">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
       </div>
     </div>
   </div>
@@ -265,13 +242,44 @@
 </audio> </h6>
           <h7> <b> Your rating:</b>
      
-        <select name=s1 required>
+        <select name=r7 id= "rating7" required>
            <option disabled selected value> -- select an option -- </option>
     <option value="1">&#11088</option>
     <option value="2">&#11088 &#11088</option>
     <option value="3">&#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
+    <option value="4">&#11088 &#11088 &#11088 &#11088</option>
+    <option value="5">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
+      </div>
+    </div>
+  </div>
+  
+          
+          <div class="col mb-4">
+
+
+
+
+ <div class="card">
+     
+      <div class="card-body">
+        <h5 class="card-title">Let It Go  </h5>
+         <h5 class="card-subtitle mb-2 text-muted">Idina Menzel </h5>
+        <h6> Duration: 3.44 </h6>
+        <h6> Album: Frozen </h6>
+        <h6 style="color:">    Sample:         
+   <audio controls preload="metadata" style=" width:180px; height:60px; ">
+	<source src="audio.mp3" type="audio/mpeg">
+	Your browser does not support the audio element.
+</audio> </h6>
+          <h7> <b> Your rating:</b>
+     
+        <select name=r8 id= "rating8" required>
+           <option disabled selected value> -- select an option -- </option>
+    <option value="1">&#11088</option>
+    <option value="2">&#11088 &#11088</option>
+    <option value="3">&#11088 &#11088 &#11088</option>
+    <option value="4">&#11088 &#11088 &#11088 &#11088</option>
+    <option value="5">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
       </div>
     </div>
   </div>
@@ -295,13 +303,13 @@
 </audio> </h6>
           <h7> <b> Your rating:</b>
      
-        <select name=s1 required>
+        <select name=r9 id= "rating9" required>
            <option disabled selected value> -- select an option -- </option>
     <option value="1">&#11088</option>
     <option value="2">&#11088 &#11088</option>
     <option value="3">&#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
+    <option value="4">&#11088 &#11088 &#11088 &#11088</option>
+    <option value="5">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
       </div>
     </div>
   </div>
@@ -329,13 +337,13 @@
 </audio> </h6>
                     <h7> <b> Your rating:</b>
      
-        <select name=s1 required>
+        <select name=r10 id= "rating10" required>
            <option disabled selected value> -- select an option -- </option>
     <option value="1">&#11088</option>
     <option value="2">&#11088 &#11088</option>
     <option value="3">&#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
+    <option value="4">&#11088 &#11088 &#11088 &#11088</option>
+    <option value="5">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
       </div>
     </div>
   </div>
@@ -360,13 +368,13 @@
 </audio> </h6>
                     <h7> <b> Your rating:</b>
      
-        <select name=s1 required>
+        <select name=r11 id= "rating11" required>
            <option disabled selected value> -- select an option -- </option>
     <option value="1">&#11088</option>
     <option value="2">&#11088 &#11088</option>
     <option value="3">&#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
+    <option value="4">&#11088 &#11088 &#11088 &#11088</option>
+    <option value="5">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
       </div>
     </div>
   </div>
@@ -391,13 +399,13 @@
 </audio> </h6>
                     <h7> <b> Your rating:</b>
      
-        <select name=s1 required>
+        <select name=r12 id= "rating12" required>
            <option disabled selected value> -- select an option -- </option>
     <option value="1">&#11088</option>
     <option value="2">&#11088 &#11088</option>
     <option value="3">&#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
+    <option value="4">&#11088 &#11088 &#11088 &#11088</option>
+    <option value="5">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
       </div>
     </div>
   </div>
@@ -421,13 +429,13 @@
 </audio> </h6>
                     <h7> <b> Your rating:</b>
      
-        <select name=s1 required>
+        <select name=r13 id= "rating13" required>
            <option disabled selected value> -- select an option -- </option>
     <option value="1">&#11088</option>
     <option value="2">&#11088 &#11088</option>
     <option value="3">&#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
+    <option value="4">&#11088 &#11088 &#11088 &#11088</option>
+    <option value="5">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
       </div>
     </div>
   </div>
@@ -451,13 +459,13 @@
 </audio> </h6>
                     <h7> <b> Your rating:</b>
      
-        <select name=s1 required>
+        <select name=r14 id= "rating14" required>
            <option disabled selected value> -- select an option -- </option>
     <option value="1">&#11088</option>
     <option value="2">&#11088 &#11088</option>
     <option value="3">&#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
+    <option value="4">&#11088 &#11088 &#11088 &#11088</option>
+    <option value="5">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
       </div>
     </div>
   </div>
@@ -481,13 +489,13 @@
 </audio> </h6>
                     <h7> <b> Your rating:</b>
      
-        <select name=s1 required>
+        <select name=r15 id= "rating15" required>
            <option disabled selected value> -- select an option -- </option>
     <option value="1">&#11088</option>
     <option value="2">&#11088 &#11088</option>
     <option value="3">&#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
+    <option value="4">&#11088 &#11088 &#11088 &#11088</option>
+    <option value="5">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
       </div>
     </div>
   </div>
@@ -511,13 +519,13 @@
 </audio> </h6>
                     <h7> <b> Your rating:</b>
      
-        <select name=s1  >
+        <select name=r16 id= "rating16"  >
            <option disabled selected value> -- select an option -- </option>
     <option value="1">&#11088</option>
     <option value="2">&#11088 &#11088</option>
     <option value="3">&#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
+    <option value="4">&#11088 &#11088 &#11088 &#11088</option>
+    <option value="5">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
       </div>
     </div>
   </div>
@@ -541,13 +549,13 @@
 </audio> </h6>
                     <h7> <b> Your rating:</b>
      
-        <select name=s1 required>
+        <select name=r17 id= "rating17" required>
            <option disabled selected value> -- select an option -- </option>
     <option value="1">&#11088</option>
     <option value="2">&#11088 &#11088</option>
     <option value="3">&#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
+    <option value="4">&#11088 &#11088 &#11088 &#11088</option>
+    <option value="5">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
       </div>
     </div>
   </div>
@@ -570,43 +578,13 @@
 </audio> </h6>
                     <h7> <b> Your rating:</b>
      
-        <select name=s1 required>
+        <select name=r18 id= "rating18" required>
            <option disabled selected value> -- select an option -- </option>
     <option value="1">&#11088</option>
     <option value="2">&#11088 &#11088</option>
     <option value="3">&#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
-      </div>
-    </div>
-  </div>
-
-
-
-    
-          <div class="col mb-4">
-
-
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Can You Feel the Love Tonight </h5>
-        <h5 class="card-subtitle mb-2 text-muted">Elton John </h5>
-        <h6> Duration: 4.01 </h6>
-        <h6> Album: lion king  </h6>
-               <h6 style="color:">    Sample:         
-   <audio controls preload="metadata" style=" width:180px; height:60px; ">
-	<source src="audio.mp3" type="audio/mpeg">
-	Your browser does not support the audio element.
-</audio> </h6>
-                    <h7> <b> Your rating:</b>
-     
-        <select name=s1 required>
-           <option disabled selected value> -- select an option -- </option>
-    <option value="1">&#11088</option>
-    <option value="2">&#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
+    <option value="4">&#11088 &#11088 &#11088 &#11088</option>
+    <option value="5">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
       </div>
     </div>
   </div>
@@ -630,13 +608,43 @@
 </audio> </h6>
                     <h7> <b> Your rating:</b>
      
-        <select name=s1 required>
+        <select name=r19 id= "rating19" required>
            <option disabled selected value> -- select an option -- </option>
     <option value="1">&#11088</option>
     <option value="2">&#11088 &#11088</option>
     <option value="3">&#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
+    <option value="4">&#11088 &#11088 &#11088 &#11088</option>
+    <option value="5">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
+      </div>
+    </div>
+  </div>
+
+
+
+    
+          <div class="col mb-4">
+
+
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Can You Feel the Love Tonight </h5>
+        <h5 class="card-subtitle mb-2 text-muted">Elton John </h5>
+        <h6> Duration: 4.01 </h6>
+        <h6> Album: lion king  </h6>
+               <h6 style="color:">    Sample:         
+   <audio controls preload="metadata" style=" width:180px; height:60px; ">
+	<source src="audio.mp3" type="audio/mpeg">
+	Your browser does not support the audio element.
+</audio> </h6>
+                    <h7> <b> Your rating:</b>
+     
+        <select name=r20 id= "rating20" required>
+           <option disabled selected value> -- select an option -- </option>
+    <option value="1">&#11088</option>
+    <option value="2">&#11088 &#11088</option>
+    <option value="3">&#11088 &#11088 &#11088</option>
+    <option value="4">&#11088 &#11088 &#11088 &#11088</option>
+    <option value="5">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
       </div>
     </div>
   </div>
@@ -645,30 +653,6 @@
 
 
 
-  <div class="col mb-4">
-    <div class="card">
-      <div class="card-body">
-       <h5 class="card-title">Yesterday  </h5>
-        <h5 class="card-subtitle mb-2 text-muted">the beatles  </h5>
-        <h6> Duration: 4.04 </h6>
-        <h6> Album: Yesterday </h6>
-               <h6 style="color:">    Sample:         
-   <audio controls preload="metadata" style=" width:180px; height:60px; ">
-	<source src="audio.mp3" type="audio/mpeg">
-	Your browser does not support the audio element.
-</audio> </h6>
-            <h7> <b> Your rating:</b>
-     
-        <select name=s1 required>
-           <option disabled selected value> -- select an option -- </option>
-    <option value="1">&#11088</option>
-    <option value="2">&#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088</option>
-    <option value="3">&#11088 &#11088 &#11088 &#11088 &#11088</option> </select> </h7>
-    </div>
-  </div>
-  
   </div>
 </div>
 
@@ -677,7 +661,7 @@
       </div>
     </div>
     
-  <input type="Submit" value="Submit request"  class="btn btn-info" onsubmit="redirect()"/ >
+    <button type="submit"  class="btn btn-info">Submit</button>
   <script>
 
   function redirect()
@@ -704,11 +688,7 @@
       
       </p>
 
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-               </font>
+              </font>
            </font>
   </body>
 
