@@ -185,6 +185,36 @@ app.get('/submit-student-data', function (req, res) {
 });
 
 
+ 
+app.get('/HTMLpage0', async (req, res) => {
+    
+   
+    
+
+    dbUtils.sql("select * from IDs where id=1")
+     .execute()
+     .then(function(results) {
+      console.log(results)
+      res.send({data:results})
+     }).catch(function(err) {
+       console.log ("err")
+     });
+     
+     
+  
+ 
+   
+   /* res.statusMessage = "tess0064" +  results[o];
+    res.send("88554655940") */
+    
+});
+
+
+
+
+
+
+
 
 
 
