@@ -22,17 +22,19 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-
+        <script src="page0.js"></script>
 
 <div class="alert alert-info" role="alert">
     <h4 class="alert-heading"></h4> <font size="5"></font>
     <p style="text-align:center;">
         your id : <label id="labelId"/> </p>
-
+        <p style="text-align:center;">
+        Please open the following link in a new window on PC / MOBILE :
+</p>
         </br>
 
         </br>
-
+        <p style="text-align:center;">
         <img src="projectfile/BGU.png" width="200" height="200" alt="" style="align-items: center"/>
 
     <hr>
@@ -54,28 +56,7 @@
 
 
 </p>
-​
-<script>
-    function test() {
-        alert("Please indicate that you accept the Terms and Conditions");
-        fetch('/HTMLPage0')
-            .then((res) => {
-                return res.json()
-            })
-            .then((data) => {
-                console.log(data)
-                idLbl = document.getElementById("labelId")
-                idLbl.innerText = data[0].id
-                let v = data[0]
 
-            })
-            .catch((err) => {
-                console.log(err)
-            })
-
-    }
-    test()
-</script>
 
 
 </font>

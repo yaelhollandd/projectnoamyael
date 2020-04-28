@@ -1,0 +1,125 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>p2</title>
+  </head>
+​
+  <body style="padding:30px;">
+
+
+<div class="alert alert-info" role="alert">
+  <h4 class="alert-heading"></h4> <font size="5"> 
+    <p style="text-align:center;">
+   Consent form to participate in the experiment <br> 
+</p> </font>
+ <h4 class="alert-heading"></h4> <font size="3"> 
+1. You are about to participate in the experiment as part of a decision making study. <br>
+2. During the experiment you will be asked to answer a number of questions.<br>
+3. The study and experiment were approved by the Ethics Committee of Ben-Gurion University, Israel.<br>
+4. Confidentiality of each participant's personal identity is guaranteed. There is, and will not be, any way to link participants' personal information to the answers and data they provide during the experiment.<br>
+5. The experiment will last about 40 minutes.<br>
+6. You can retire at any time from participating in the experiment. However, a retired participant will not be eligible for any remuneration.<br>
+
+I hereby declare that I have understood all of the foregoing and that I voluntarily gave my consent.<br>
+
+
+<div class="form-check">
+
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"  required name="terms" >
+  <label class="form-check-label" for="defaultCheck1">
+    I approve. To start the experiment, go to the next page </p> <br>
+  </label>
+
+
+ 
+</div>
+
+  <script>
+  
+function checkAgree() 
+{
+   if (document.getElementbyId("defaultCheck1").getAttribute("checked") )//checkbox is checked
+   {
+       location.href = "test.html"; //load the next page.
+   }
+   else
+   {
+       Alert("You need to check the box before you can continue");
+   }
+
+}
+
+document.getElementById("proceed-button").addEventListener("click", checkAgree ,false);
+
+
+</script>
+  
+
+
+
+
+
+<script>
+
+
+
+function redirect()
+{
+  var checkBox = document.getElementById("defaultCheck1");
+   if (checkBox.checked == true){
+        window.location.href = 'HTMLPage11.html';
+    }
+   else {
+          alert("Please indicate that you accept the Terms and Conditions");
+        }     
+}
+
+
+
+</script>
+
+
+
+
+
+ <br/>
+
+<br>
+
+
+  <hr>
+  <p class="mb-0"></p>
+</div>
+
+   
+
+
+
+      </div>
+    </div>
+     
+     
+   ​
+      
+                   <p style="text-align:center;">
+  <a onclick="redirect() "><button type="button" class="btn btn-info">next page</button></a>
+
+     
+      </p>
+​
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+               </font>
+           </font>
+  </body>
+​
+</html>
+

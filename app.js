@@ -138,6 +138,14 @@ app.get('/HTMLPage3.html', function (req, res) {
 })
 
 
+app.get('/HTMLPage33.html', function (req, res) {
+    res.show("HTMLPage3.html");
+
+})
+
+
+
+
 app.get('/HTMLPage5.html', function (req, res) {
     res.show("HTMLPage5.html");
 
@@ -150,7 +158,17 @@ app.get('/Thanks.html', function (req, res) {
 
 
 app.get('/HTMLPage1.html', function (req, res) {
-    res.show("THTMLPage1.html");
+    res.show("HTMLPage1.html");
+
+})
+
+app.get('/HTMLPage22.html', function (req, res) {
+    res.show("HTMLPage22.html");
+
+})
+
+app.get('/HTMLPage2.html', function (req, res) {
+    res.show("HTMLPage2.html");
 
 })
 
@@ -172,8 +190,6 @@ app.get('/HTMLpage0', async (req, res) => {
     });
 
 
-    /* res.statusMessage = "tess0064" +  results[o];
-     res.send("88554655940") */
 
 });
 
