@@ -84,8 +84,9 @@ function submit() {
     postData('/insertPage1DB', data)
         .then((data) => {})
         .catch((err) => {console.log(err)})
-    fetch('/HTMLPage22.html')
+   /* fetch('/HTMLPage22.html')
         .then((res) => {
             window.location = 'HTMLPage22.html'
-        })
+      })*/
+      window.location = 'HTMLPage22.html'
 }
