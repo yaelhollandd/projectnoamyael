@@ -45,6 +45,8 @@ function submit() {
      let inp_inf16 = document.getElementById("inp_inf16"); 
      let inp_inf17 = document.getElementById("inp_inf17"); 
      let inp_inf18 = document.getElementById("inp_inf18"); 
+     let workerid=  document.getElementById("workerid"); 
+    
     let data = {
         inp_inf1: inp_inf1.value , 
         inp_inf2: inp_inf2.value , 
@@ -64,7 +66,9 @@ function submit() {
        inp_inf16: parseInt(inp_inf16.value),
        inp_inf17: parseInt(inp_inf17.value),
        inp_inf18: parseInt(inp_inf18.value),
-       User_ID: sessionStorage.getItem("User_ID")
+       workerid: workerid.value , 
+       User_ID: sessionStorage.getItem("User_ID") 
+       
     
     }
     postData('/insertPage5DB', data)

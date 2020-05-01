@@ -118,8 +118,9 @@ app.post('/insertPage5DB', async (req, res) => {
          group_hours_mobile_using,
          noise_rate,
          light_rate,
-         density_rate ) 
-    VALUES(${data.User_ID} , '${data.inp_inf1}','${data.inp_inf2}','${data.inp_inf3}',${data.inp_inf4},${data.inp_inf5},${data.inp_inf6},${data.inp_inf7},'${data.inp_inf8}',${data.inp_inf9},${data.inp_inf10},${data.inp_inf11},${data.inp_inf12},'${data.inp_inf13}','${data.inp_inf14}','${data.inp_inf15}',${data.inp_inf16},${data.inp_inf17},${data.inp_inf18});`)
+         density_rate ,
+        workerId  ) 
+    VALUES(${data.User_ID} , '${data.inp_inf1}','${data.inp_inf2}','${data.inp_inf3}',${data.inp_inf4},${data.inp_inf5},${data.inp_inf6},${data.inp_inf7},'${data.inp_inf8}',${data.inp_inf9},${data.inp_inf10},${data.inp_inf11},${data.inp_inf12},'${data.inp_inf13}','${data.inp_inf14}','${data.inp_inf15}',${data.inp_inf16},${data.inp_inf17},${data.inp_inf18},'${data.workerid}');`)
         .execute()
         .then(function (results) {
             ans = 200;
@@ -130,7 +131,20 @@ app.post('/insertPage5DB', async (req, res) => {
     res.status(ans).send("finish");
 
 });
+app.post('/insertPage0DB', async (req, res) => {
+    let ans;
+    let data2 = req.body 
+     await dbUtils.sql(`update IDs set is_use=1 where id=${data2.first_id};`)
+        .execute()
+        .then(function (results) {
+            ans = 200;
+        }).fail(function (err) {
+            ans = 400;
+            console.log(err);
+        });
+    res.status(ans).send("finish");
 
+});
 
 app.get('/HTMLPage3.html', function (req, res) {
     res.show("HTMLPage3.html");
@@ -180,7 +194,12 @@ app.get('/submit-student-data', function (req, res) {
 
 app.get('/HTMLpage0', async (req, res) => {
 
-    dbUtils.sql("select * from IDs where id=1")
+    //let data3 = req.body
+    //await dbUtils.sql(`select * from IDs where id=${data3.first_id};`)
+  //  ${data.inp_song_nr22}
+  //await dbUtils.sql("select * where id=( select min(id) where is_use=0) from IDs ")  
+  await dbUtils.sql("select * from IDs where id=( select min(id) from IDs where is_use=0) ")  
+ //await dbUtils.sql('select * from IDs where id=${data3.first_id};')
         .execute()
         .then(function (results) {
             console.log(results)
