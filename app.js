@@ -153,7 +153,7 @@ app.get('/HTMLPage3.html', function (req, res) {
 
 
 app.get('/HTMLPage33.html', function (req, res) {
-    res.show("HTMLPage3.html");
+    res.show("HTMLPage33.html");
 
 })
 
@@ -178,7 +178,7 @@ app.get('/HTMLPage1.html', function (req, res) {
 
 
 app.get('/HTMLPage11.html', function (req, res) {
-    res.show("HTMLPage1.html");
+    res.show("HTMLPage11.html");
 
 })
 
