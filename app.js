@@ -153,7 +153,7 @@ app.get('/HTMLPage3.html', function (req, res) {
 
 
 app.get('/HTMLPage33.html', function (req, res) {
-    res.show("HTMLPage33.html");
+    res.show("HTMLpage33.html");
 
 })
 
