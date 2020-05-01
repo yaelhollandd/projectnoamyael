@@ -183,7 +183,7 @@ app.get('/HTMLPage11.html', function (req, res) {
 })
 
 app.get('/HTMLPage22.html', function (req, res) {
-    res.show("HTMLPage2.html");
+    res.show("HTMLPage22.html");
 
 })
 
