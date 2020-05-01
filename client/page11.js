@@ -86,6 +86,6 @@ function submit() {
         .catch((err) => {console.log(err)})
     fetch('/HTMLPage22.html')
         .then((res) => {
-            window.location = res.url
+            window.location = 'HTMLPage22.html'
         })
 }
