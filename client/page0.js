@@ -115,7 +115,11 @@ let first_id=11;
              .then((data2) => {})
          .catch((err) => {console.log(err)})
          
+         
+         document.getElementById("expiID2").innerText=sessionStorage.getItem("no")
          document.getElementById("URL").textContent="Your URL is :  ";
+         document.getElementById("expiID").textContent=" Remember your Experiment ID :";
+         document.getElementById("expiID3").textContent="  (you will need to enter it later)";
          let p="p";
          let e=sessionStorage.getItem("device").localeCompare(p);
          let N="N";
