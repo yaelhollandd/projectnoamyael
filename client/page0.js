@@ -122,28 +122,41 @@ let first_id=11;
          let e2=sessionStorage.getItem("Listen").localeCompare(N);
          console.log(e);
          if(e==0 && e2==0){
-         document.getElementById("Device").textContent="please open the link in a new window on your PC(Desktop) url non listen  ";
+         document.getElementById("Device").textContent=
+         " https://recommendationsystemsongs.herokuapp.com/Instructions.html   ";
        
-        /* document.getElementById("URL1").href ="https://www.gmail.com ";*/ 
+         document.getElementById("Device2").textContent=
+         " please open the link in a new window on your PC(Desktop)   ";
+      
          
         }
         if(e==0 && e2!=0){
-            document.getElementById("Device").textContent="please open the link in a new window on your PC(Desktop) url  listen  ";
+            document.getElementById("Device").textContent=
+            " https://recommendationsystemsongs.herokuapp.com/Instructions1.html  ";
           
-           /* document.getElementById("URL1").href ="https://www.gmail.com ";*/ 
+            document.getElementById("Device2").textContent=
+        "    please open the link in a new window on your PC(Desktop)   ";
+     
             
            }
    
 
         if(e!=0 && e2==0){
 
-        document.getElementById("Device").textContent="please open the link in a new window on your Mobile url non listen  ";
-      /*  document.getElementById("URL1").href ="https://www.walla.com "; */
+        document.getElementById("Device").textContent=
+        " https://recommendationsystemsongs.herokuapp.com/Instructions.html    ";
+     
+        document.getElementById("Device2").textContent=
+        "  please open the link in a new window on your Mobile  ";
+     
     }
 
     if(e!=0 && e2!=0){
-        document.getElementById("Device").textContent="please open the link in a new window on your Mobile url  listen  ";
-
+        document.getElementById("Device").textContent=
+        " https://recommendationsystemsongs.herokuapp.com/Instructions1.html    ";
+        document.getElementById("Device2").textContent=
+        "    please open the link in a new window on your Mobile  ";
+     
 
     }
 
@@ -151,22 +164,5 @@ let first_id=11;
 
 
 
-/*
-    let data2 = {
-               
-        first_id:sessionStorage.getItem("first_id")
-       // first_id : first_id
-  }
-  postData('/insertPage0DB', data2)
-         .then((data2) => {})
-     .catch((err) => {console.log(err)})
 
-           /* function test2(){
-
-var id=document.getElementById("labelId");
-document.write("test2 "+id.value );
-document.write("test2222 "+document.getElementById("labelId").value );
-return 200;
-        }
-*/
     
