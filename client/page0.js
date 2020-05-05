@@ -123,7 +123,7 @@ let first_id=11;
          console.log(e);
          if(e==0 && e2==0){
          document.getElementById("Device").textContent=
-         " https://recommendationsystemsongs.herokuapp.com/Instructions.html   ";
+         "https://recommendationsystemsongs.herokuapp.com   ";
        
          document.getElementById("Device2").textContent=
          " please open the link in a new window on your PC(Desktop)   ";
@@ -132,7 +132,7 @@ let first_id=11;
         }
         if(e==0 && e2!=0){
             document.getElementById("Device").textContent=
-            " https://recommendationsystemsongs.herokuapp.com/Instructions1.html  ";
+            " https://recommendationsystemsongs.herokuapp.com  ";
           
             document.getElementById("Device2").textContent=
         "    please open the link in a new window on your PC(Desktop)   ";
@@ -144,7 +144,7 @@ let first_id=11;
         if(e!=0 && e2==0){
 
         document.getElementById("Device").textContent=
-        " https://recommendationsystemsongs.herokuapp.com/Instructions.html    ";
+        " https://recommendationsystemsongs.herokuapp.com    ";
      
         document.getElementById("Device2").textContent=
         "  please open the link in a new window on your Mobile  ";
@@ -153,7 +153,7 @@ let first_id=11;
 
     if(e!=0 && e2!=0){
         document.getElementById("Device").textContent=
-        " https://recommendationsystemsongs.herokuapp.com/Instructions1.html    ";
+        " https://recommendationsystemsongs.herokuapp.com    ";
         document.getElementById("Device2").textContent=
         "    please open the link in a new window on your Mobile  ";
      
