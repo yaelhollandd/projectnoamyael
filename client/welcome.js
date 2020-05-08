@@ -19,7 +19,7 @@ function redirect()
         window.location.href = 'Instructions.html';
     }
     if(check == true ) {    
-        alert("Invalid device");
+        alert("Invalid device - To perform the experiment you need to switch to a PC device");
         }
 
       
@@ -30,7 +30,7 @@ function redirect()
             window.location.href = 'Instructions1.html';
         }
         if(check == true ) {    
-            alert("Invalid device");
+            alert("Invalid device - To perform the experiment you need to switch to a PC device");
             }
 
     }
@@ -38,7 +38,7 @@ function redirect()
     if  (id2>=61 && id2<=90)   {
         if(check == false ) {    
             
-            alert("Invalid device");
+            alert("Invalid device - To perform the experiment you need to switch to a Mobile device");
         }
         if(check == true ) {    
             window.location.href = 'Instructions.html';
@@ -49,7 +49,7 @@ function redirect()
     if  (id2>=91 && id2<=120)   {
         if(check == false ) {    
             
-            alert("Invalid device");
+            alert("Invalid device - To perform the experiment you need to switch to a Mobile device");
         }
         if(check == true ) {    
             window.location.href = 'Instructions1.html';
