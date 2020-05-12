@@ -115,11 +115,12 @@ let first_id=11;
              .then((data2) => {})
          .catch((err) => {console.log(err)})
          
-         
+         document.getElementById("Device3").textContent="  please open the link in a new window on your  ";
          document.getElementById("expiID2").innerText=sessionStorage.getItem("no")
          document.getElementById("URL").textContent="Your URL is :  ";
          document.getElementById("expiID").textContent=" Remember your Experiment ID :";
          document.getElementById("expiID3").textContent="  (you will need to enter it later)";
+         
          let p="p";
          let e=sessionStorage.getItem("device").localeCompare(p);
          let N="N";
@@ -130,7 +131,7 @@ let first_id=11;
          "recommendationsystemsongs.herokuapp.com   ";
        
          document.getElementById("Device2").textContent=
-         " please open the link in a new window on your PC(Desktop)   ";
+         "  PC(Desktop)   ";
       
          
         }
@@ -139,7 +140,7 @@ let first_id=11;
             " recommendationsystemsongs.herokuapp.com  ";
           
             document.getElementById("Device2").textContent=
-        "    please open the link in a new window on your PC(Desktop)   ";
+        "  PC(Desktop)   ";
      
             
            }
@@ -151,7 +152,7 @@ let first_id=11;
         " recommendationsystemsongs.herokuapp.com    ";
      
         document.getElementById("Device2").textContent=
-        "  please open the link in a new window on your Mobile  ";
+        "  Mobile  ";
      
     }
 
@@ -159,7 +160,7 @@ let first_id=11;
         document.getElementById("Device").textContent=
         " recommendationsystemsongs.herokuapp.com    ";
         document.getElementById("Device2").textContent=
-        "    please open the link in a new window on your Mobile  ";
+        "  Mobile  ";
      
 
     }
