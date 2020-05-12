@@ -133,8 +133,9 @@ app.post('/insertPage5DB', async (req, res) => {
 });
 app.post('/insertPage0DB', async (req, res) => {
     let ans;
-    let data2 = req.body 
-     await dbUtils.sql(`update IDs set is_use=1 where id=${data2.first_id};`)
+    //let data2 = req.body 
+     //await dbUtils.sql(`update IDs set is_use=1 where id=${data2.first_id};`)
+     await dbUtils.sql(`update IDs set is_use=1 where id=( select min(id) from IDs where is_use=0);`)
         .execute()
         .then(function (results) {
             ans = 200;
@@ -199,13 +200,9 @@ app.get('/submit-student-data', function (req, res) {
 
 
 app.get('/HTMLpage0', async (req, res) => {
-
-    //let data3 = req.body
-    //await dbUtils.sql(`select * from IDs where id=${data3.first_id};`)
-  //  ${data.inp_song_nr22}
-  //await dbUtils.sql("select * where id=( select min(id) where is_use=0) from IDs ")  
+ 
   await dbUtils.sql("select * from IDs where id=( select min(id) from IDs where is_use=0) ")  
- //await dbUtils.sql('select * from IDs where id=${data3.first_id};')
+
         .execute()
         .then(function (results) {
             console.log(results)

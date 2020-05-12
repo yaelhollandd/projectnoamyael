@@ -33,11 +33,9 @@
 let first_id=11;
 
 
-//let number=num;
+
      sessionStorage.setItem("first_id",8);
       let data3 = {
-             
-        //first_id:sessionStorage.getItem("first_id")
         first_id:first_id
      }
         fetch('/HTMLPage0',data3)
@@ -48,6 +46,20 @@ let first_id=11;
                 console.log(data)
                idLbl = document.getElementById("labelId")
                 idLbl.innerText = data[0].id
+                //idLblD = document.getElementById("labelDevice")
+                //idLblD.innerText = data[0].device
+                v=data[0].device
+                e=v.localeCompare("p")
+                console.log(v)
+                console.log(e)
+                if(e==0){
+                document.getElementById("Device2").textContent= "  PC(Desktop)   "
+                document.getElementById("Device3").textContent= "  PC(Desktop)   "
+                }
+                else{
+                document.getElementById("Device2").textContent= " Smartphone   "
+                document.getElementById("Device3").textContent= " Smartphone   "
+                }
                 sessionStorage.setItem("no",data[0].id)
                 sessionStorage.setItem("use",data[0].is_use)
                 sessionStorage.setItem("device",data[0].device)
@@ -61,41 +73,20 @@ let first_id=11;
                 console.log(err)
             })
             
-            /*let v=document.getElementById("labelId");
-            
-            let data2 = {
-               
-                //first_id : parseInt(v.value)
-                //first_id:sessionStorage.getItem("first_id")
-              first_id : first_id
-          }
-          postData('/insertPage0DB', data2)
-                 .then((data2) => {})
-             .catch((err) => {console.log(err)})
-            return 50;
-           // document.write("lllllllllllll"+sessionStorage.getItem("ll"))
-*/
+    
+
     }
 
 
     function test(){
     
-        //sessionStorage.setItem("first_id",1);
-        //sessionStorage.setItem("isUse",2);
+
         var k= 0; 
         var p= 0;
-       // var Use=0;
-        //while (sessionStorage.getItem("isUse")==0) {
-        // while(x<6){
+
         
          p=test0();
-         //k=test2();
-        // if(sessionStorage.getItem("use")==0)
-         //x=4
-         //else
-          //x++;
-          //use=1
-        //}
+
   
 
     }
@@ -103,8 +94,8 @@ let first_id=11;
     
     test()
 
-
-    function adress(){
+    
+    function adress2(){
 
         let data2 = {
                
@@ -115,57 +106,12 @@ let first_id=11;
              .then((data2) => {})
          .catch((err) => {console.log(err)})
          
-         document.getElementById("Device3").textContent="  please open the link in a new window on your  ";
-         document.getElementById("expiID2").innerText=sessionStorage.getItem("no")
-         document.getElementById("URL").textContent="Your URL is :  ";
-         document.getElementById("expiID").textContent=" Remember your Experiment ID :";
-         document.getElementById("expiID3").textContent="  (you will need to enter it later)";
-         
-         let p="p";
-         let e=sessionStorage.getItem("device").localeCompare(p);
-         let N="N";
-         let e2=sessionStorage.getItem("Listen").localeCompare(N);
-         console.log(e);
-         if(e==0 && e2==0){
-         document.getElementById("Device").textContent=
-         "recommendationsystemsongs.herokuapp.com   ";
-       
-         document.getElementById("Device2").textContent=
-         "  PC(Desktop)   ";
-      
-         
-        }
-        if(e==0 && e2!=0){
-            document.getElementById("Device").textContent=
-            " recommendationsystemsongs.herokuapp.com  ";
-          
-            document.getElementById("Device2").textContent=
-        "  PC(Desktop)   ";
-     
-            
-           }
-   
 
-        if(e!=0 && e2==0){
-
-        document.getElementById("Device").textContent=
-        " recommendationsystemsongs.herokuapp.com    ";
-     
-        document.getElementById("Device2").textContent=
-        "  Mobile  ";
-     
-    }
-
-    if(e!=0 && e2!=0){
-        document.getElementById("Device").textContent=
-        " recommendationsystemsongs.herokuapp.com    ";
-        document.getElementById("Device2").textContent=
-        "  Mobile  ";
-     
-
-    }
 
 }
+
+
+
 
 
 

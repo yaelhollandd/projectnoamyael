@@ -26,8 +26,21 @@
     </p>
     
     <br> <h6 style="text-align:center;"> 
-        please return to Amazon Mturk, the code that you need to enter is your Amazon Worker ID
+        please return to Amazon Mturk
+        <br>
+        your confirmation code is: <b><label id="workerID"> </b>
+        
     </h6>
+    <script>
+        function workeridprint(){
+            console.log(sessionStorage.getItem("User_ID"))
+            let workerID = document.getElementById("workerID")
+            workerID.textContent = sessionStorage.getItem("User_ID")+"001BGU"
+            console.log(workerID)
+        }
+        workeridprint()
+
+    </script>
         <hr>
     <p class="mb-0"></p>
 </div>
