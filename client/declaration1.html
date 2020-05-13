@@ -24,7 +24,7 @@
   3. The study and experiment were approved by the Ethics Committee of Ben-Gurion University.<br>
   4. Confidentiality of each participant's personal information is guaranteed. There isn't, and will not be, any way to link participants' personal information to the answers and data they provide during the experiment.<br>
   5. You can retire at any time from participating in the experiment. However, a retired participant will not be eligible for any remuneration.<br>
-  <BR>
+  <br>
   I hereby declare that I have understood all of the above and that I voluntarily giving my consent.<br>
   
 
@@ -34,8 +34,11 @@
   <label class="form-check-label" for="defaultCheck1">
     I approve. To start the experiment, go to the next page </p> <br>
   </label>
-
-
+<br>
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2"  required name="terms" >
+  <label class="form-check-label" for="defaultCheck2">
+   I disapprove</p> <br>
+  </label>
  
 </div>
 
@@ -67,16 +70,37 @@ document.getElementById("proceed-button").addEventListener("click", checkAgree ,
 <script>
 
 
+var i=0;
 
-function redirect()
-{
-  var checkBox = document.getElementById("defaultCheck1");
-   if (checkBox.checked == true){
-        window.location.href = 'HTMLPage11.html';
+function redirect() {
+
+  var checkBox1 = document.getElementById("defaultCheck1");
+  var checkBox2 = document.getElementById("defaultCheck2");
+  if (checkBox2.checked == true && checkBox1.checked==true){
+   	alert("You must select only one option");
+   	
     }
-   else {
-          alert("Please indicate that you accept the Terms and Conditions");
-        }     
+ if (checkBox2.checked == false && checkBox1.checked==false){
+   	alert("Please indicate that you accept the Terms and Conditions");
+   	
+    }
+
+ 	if (checkBox2.checked == true && i>0){
+        window.location.href = 'exit.html';
+     
+	}
+   if (checkBox2.checked == true && i==0 && checkBox1.checked == false ){
+   	i= 1;
+         alert("Are you sure of your choice to disapprove? If you wish you can choose to approve");
+   	
+    }
+
+ if (checkBox2.checked == false && checkBox1.checked == true ){
+   	   window.location.href = 'HTMLPage11.html';
+    }
+
+ 	
+
 }
 
 
@@ -86,10 +110,6 @@ function redirect()
 
 
 
-
- <br/>
-
-<br>
 
 
   <hr>
