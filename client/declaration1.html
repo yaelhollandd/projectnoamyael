@@ -16,28 +16,41 @@
 <div class="alert alert-info" role="alert">
   <h4 class="alert-heading"></h4> <font size="5"> 
     <p style="text-align:center;">
-   Consent form to participate in the experiment <br> 
+      Informed consent to participate in an experiment
+   <br> 
 </p> </font>
  <h4 class="alert-heading"></h4> <font size="3"> 
-  1. You are about to participate in an experiment as part of a decision making study. <br>
-  2. During the experiment you will be asked to answer a number of questions.<br>
-  3. The study and experiment were approved by the Ethics Committee of Ben-Gurion University.<br>
-  4. Confidentiality of each participant's personal information is guaranteed. There isn't, and will not be, any way to link participants' personal information to the answers and data they provide during the experiment.<br>
-  5. You can retire at any time from participating in the experiment. However, a retired participant will not be eligible for any remuneration.<br>
+
+  1.	You are about to participate in a digital experiment as part of a decision-making study.
   <br>
-  I hereby declare that I have understood all of the above and that I voluntarily giving my consent.<br>
-  
+  2.	During the experiment, you will be presented with several web-pages and you will be asked to answer several questions, some of which are mandatory and others are not. 
+ <br>
+  3.	You can withdraw your participation at any time or refuse to answer any question; however, participants who will not complete the required tasks and reach the completion page will not receive credit for their participation.  
+  <br>
+  4.	Upon completion of the experiment, you will reach a completion page in which you will receive a verification code. This code will verify that you completed the experiment in Amazon Mechanical Turk so that you will receive credit for this task. 
+ <br>
+  5.	Confidentiality as to the identity of each participant is guaranteed. It is impossible to connect between the personal details of the participant and the answers and data provided during the experiment.
+ <br>
+  6.	There is no time limit for completing the experiment, which should take about 40 minutes.
+ <br>
+  7.	The experiment has been approved by Ben-Gurion University’s ethics committee.
+  <br>
+  8.	You can raise any question about the experiment by sending an email to hollandy@post.bug.ac.il
+  <br>
+  9.	Please check one of the following boxes:
+
+ 
 
 <div class="form-check">
-
+<br>
   <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"  required name="terms" >
   <label class="form-check-label" for="defaultCheck1">
-    I approve. To start the experiment, go to the next page </p> <br>
+    I hereby confirm that I have understood the above and freely give my consent to participate in this experiment  </p> 
   </label>
 <br>
   <input class="form-check-input" type="checkbox" value="" id="defaultCheck2"  required name="terms" >
   <label class="form-check-label" for="defaultCheck2">
-   I disapprove</p> <br>
+    I do not confirm</p> <br>
   </label>
  
 </div>
@@ -91,7 +104,7 @@ function redirect() {
 	}
    if (checkBox2.checked == true && i==0 && checkBox1.checked == false ){
    	i= 1;
-         alert("Are you sure of your choice to disapprove? If you wish you can choose to approve");
+         alert("Are you sure of your choice to not confirm? If you wish you can choose to  confirm");
    	
     }
 
@@ -109,7 +122,10 @@ function redirect() {
 
 
 
+<p style="text-align:center;">
+  <a onclick="redirect() "><button type="button" class="btn btn-info">next page</button></a>
 
+     
 
 
   <hr>
@@ -126,10 +142,7 @@ function redirect() {
      
    ​
       
-                   <p style="text-align:center;">
-  <a onclick="redirect() "><button type="button" class="btn btn-info">next page</button></a>
-
-     
+   
       </p>
 ​
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
