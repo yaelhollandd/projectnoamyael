@@ -8,6 +8,10 @@ $( document ).ready(function() {
 
 });
 
+
+
+
+
 async function postData(url = '', data = {}) {
     // Default options are marked with *
     const response = await fetch(url, {
@@ -27,6 +31,10 @@ async function postData(url = '', data = {}) {
 }
 
 function submit() {
+ 
+  
+
+
     let inp_inf1 = document.getElementById("inp_inf1");
     let inp_inf2 = document.getElementById("inp_inf2");
     let inp_inf3 = document.getElementById("inp_inf3");

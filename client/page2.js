@@ -31,6 +31,8 @@ var randoms = [ ];
 
 
 function submit() {
+
+
     let inp_song1 = document.getElementById("inp_song1");
     let inp_song2 = document.getElementById("inp_song2");
     let inp_song3 = document.getElementById("inp_song3");

@@ -33,6 +33,12 @@ async function postData(url = '', data = {}) {
 
 
 function submit() {
+
+   
+    var timestart = new Date();
+    timestart= Date.now() ;
+    sessionStorage.setItem("timestart",timestart);
+    
     let rating1 = document.getElementById("rating1");
     let rating2 = document.getElementById("rating2");
     let rating3 = document.getElementById("rating3");

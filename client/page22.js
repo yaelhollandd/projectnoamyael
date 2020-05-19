@@ -31,6 +31,15 @@ var randoms = [ ];
 
 
 function submit() {
+
+    var timeend = new Date();
+    timeend= Date.now() ;
+    var difftime= timeend-sessionStorage.getItem("timestart");
+  if((difftime/1000)<200){
+    alert("You must listen each and every song in the list before you browse to the next page");
+    return;
+
+  }
     let inp_song1 = document.getElementById("inp_song1");
     let inp_song2 = document.getElementById("inp_song2");
     let inp_song3 = document.getElementById("inp_song3");
@@ -41,16 +50,7 @@ function submit() {
     let inp_song8 = document.getElementById("inp_song8");
     let inp_song9 = document.getElementById("inp_song9");
     let inp_song10 = document.getElementById("inp_song10");
-    let inp_song11 = document.getElementById("inp_song11");
-    let inp_song12 = document.getElementById("inp_song12");
-    let inp_song13 = document.getElementById("inp_song13");
-    let inp_song14 = document.getElementById("inp_song14");
-    let inp_song15 = document.getElementById("inp_song15");
-    let inp_song16 = document.getElementById("inp_song16");
-    let inp_song17 = document.getElementById("inp_song17");
-    let inp_song18 = document.getElementById("inp_song18");
-    let inp_song19 = document.getElementById("inp_song19");
-    let inp_song20 = document.getElementById("inp_song20");
+   
     
 
     let data = {
@@ -64,16 +64,7 @@ function submit() {
         inp_song8: parseInt(inp_song8.value),
         inp_song9: parseInt(inp_song9.value),
         inp_song10: parseInt(inp_song10.value),
-        inp_song11: parseInt(inp_song11.value),
-        inp_song12: parseInt(inp_song12.value),
-        inp_song13: parseInt(inp_song13.value),
-        inp_song14: parseInt(inp_song14.value),
-        inp_song15: parseInt(inp_song15.value),
-        inp_song16: parseInt(inp_song16.value),
-        inp_song17: parseInt(inp_song17.value),
-        inp_song18: parseInt(inp_song18.value),
-        inp_song19: parseInt(inp_song19.value),
-        inp_song20: parseInt(inp_song20.value),
+      
         User_ID: sessionStorage.getItem("User_ID")
      
                     }
@@ -92,16 +83,7 @@ function submit() {
             x8: randoms[8]  ,
             x9: randoms[9]  ,
             x10: randoms[10]  , 
-            x11: randoms[11]  ,
-            x12: randoms[12]  ,
-            x13: randoms[13]  ,
-            x14: randoms[14]  ,
-            x15: randoms[15]  ,
-            x16: randoms[16]  ,
-            x17: randoms[17]  ,
-            x18: randoms[18]  ,
-            x19: randoms[19]  ,
-            x20: randoms[20]  ,
+
             User_ID: sessionStorage.getItem("User_ID")
         }
     

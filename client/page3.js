@@ -27,6 +27,9 @@ async function postData(url = '', data = {}) {
 }
 
 function submit() {
+    
+    
+ 
     let inp_song_nr21 = document.getElementById("inp_song_nr21");
     let inp_song_nr22 = document.getElementById("inp_song_nr22");
     let inp_song_nr23 = document.getElementById("inp_song_nr23");
