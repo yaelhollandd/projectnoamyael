@@ -38,7 +38,7 @@ function submit() {
     var timeend = new Date();
     timeend= Date.now() ;
     var difftime= timeend-sessionStorage.getItem("timestart");
-  if((difftime/1000)<200){
+  if((difftime/1000)<150){
     alert("You must listen each and every song in the list before you browse to the next page");
     return;
 
