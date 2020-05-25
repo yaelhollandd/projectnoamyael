@@ -46,7 +46,7 @@ function redirect()
 
     }
 
-    if  (id2>=106 && id2<=140)   {
+    if  (id2>=106 && id2<=150)   {
         if(check == false ) {    
             
             alert("Invalid device - To perform the experiment you need to switch to a Mobile device");
@@ -57,7 +57,41 @@ function redirect()
 
     }
 
-    if (id2>140 )
+    
+    if  (id2>=151 && id2<=160)   {
+        if(check == false ) {    
+            
+            alert("Invalid device - To perform the experiment you need to switch to a Mobile device");
+        }
+        if(check == true ) {    
+            window.location.href = 'declaration.html';
+            }
+
+    }
+
+    if  (id2>=161 && id2<=170)   {
+        if(check == false ) {    
+            
+            alert("Invalid device - To perform the experiment you need to switch to a Mobile device");
+        }
+        if(check == true ) {    
+            window.location.href = 'declaration1.html';
+            }
+
+    }
+
+    if  (id2>=171 && id2<=180)   {
+        if(check == false ) {    
+            
+            alert("Invalid device - To perform the experiment you need to switch to a Mobile device");
+        }
+        if(check == true ) {    
+            window.location.href = 'declaration.html';
+            }
+
+    }
+
+    if (id2>180 )
     alert("Invalid ID");
     if (id2<1 )
     alert("Invalid ID");
