@@ -107,7 +107,7 @@ function submit() {
             User_ID: sessionStorage.getItem("User_ID")
         }
     
-    
+      
         postData('/insertPage22DB', data2)
         .then((data) => {})
         .catch((err) => {console.log(err)})

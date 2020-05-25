@@ -26,6 +26,9 @@ async function postData(url = '', data = {}) {
     return response.json(); // parses JSON response into native JavaScript objects
 }
 var randoms = [ ];
+var y=[] ;
+
+
 
 
 
@@ -64,14 +67,25 @@ function submit() {
         inp_song8: parseInt(inp_song8.value),
         inp_song9: parseInt(inp_song9.value),
         inp_song10: parseInt(inp_song10.value),
-      
+        inp_song11: 0 , 
+        inp_song12: 0, 
+        inp_song13: 0,
+        inp_song14: 0,
+        inp_song15: 0,
+        inp_song16: 0,
+        inp_song17: 0,
+        inp_song18: 0,
+        inp_song19: 0,
+        inp_song20: 0,
         User_ID: sessionStorage.getItem("User_ID")
+      
+        
      
                     }
     postData('/insertPage2DB', data)
         .then((data) => {})
         .catch((err) => {console.log(err)})
-   
+        y[1]=0;
         let data2 = {
             x1: randoms[1]  ,
             x2: randoms[2]  ,
@@ -83,8 +97,18 @@ function submit() {
             x8: randoms[8]  ,
             x9: randoms[9]  ,
             x10: randoms[10]  , 
+            x11: y[1] , 
+            x12: y[1] , 
+            x13: y[1] , 
+            x14: y[1] ,
+            x15: y[1] ,
+            x16: y[1]  ,
+            x17: y[1]  ,
+            x18: y[1]  ,
+            x19: y[1]  ,
+            x20: y[1]  ,
 
-            User_ID: sessionStorage.getItem("User_ID")
+         User_ID: sessionStorage.getItem("User_ID")
         }
     
     
