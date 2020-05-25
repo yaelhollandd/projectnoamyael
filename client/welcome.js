@@ -91,7 +91,51 @@ function redirect()
 
     }
 
-    if (id2>180 )
+    if  (id2>=181 && id2<=190)   {
+        if(check == false ) {    
+            
+            alert("Invalid device - To perform the experiment you need to switch to a Mobile device");
+        }
+        if(check == true ) {    
+            window.location.href = 'declaration1.html';
+            }
+
+    }
+
+    if  (id2>=191 && id2<=200)   {
+        if(check == false ) {    
+            
+            alert("Invalid device - To perform the experiment you need to switch to a Mobile device");
+        }
+        if(check == true ) {    
+            window.location.href = 'declaration.html';
+            }
+
+    }
+    if  (id2>=201 && id2<=210)   {
+        if(check == false ) {    
+            
+            alert("Invalid device - To perform the experiment you need to switch to a Mobile device");
+        }
+        if(check == true ) {    
+            window.location.href = 'declaration1.html';
+            }
+
+    }
+
+    
+    if  (id2>=211 && id2<=220)   {
+        if(check == false ) {    
+            
+            alert("Invalid device - To perform the experiment you need to switch to a Mobile device");
+        }
+        if(check == true ) {    
+            window.location.href = 'declaration.html';
+            }
+
+    }
+
+    if (id2>220 )
     alert("Invalid ID");
     if (id2<1 )
     alert("Invalid ID");
