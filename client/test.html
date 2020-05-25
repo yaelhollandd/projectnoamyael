@@ -91,8 +91,33 @@
       <iframe width="1019" height="573" src="https://www.youtube.com/embed/videoseries?list=PLDz-3V1_TIyhVYiJeGdqc9bjpAf9L9Zfq&amp;loop=1" frameborder="0" allow="accelerometer; autoplay " ;"="" =""="" encrypted-media;="" gyroscope;="" picture-in-picture"="" allowfullscreen=""></iframe>
 
       9999999
-      <video controls> <source src="video.m4v" type="video/mp4" /> <!-- MPEG4 for Safari --> <source src="video.ogg" type="video/ogg" /> <!-- Ogg Theora for Firefox 3.1b2 --> </video>
-      
+      <div data-video = "TWqArWqPG-A"
+      data-startseconds = "100"
+      data-endseconds = "200"
+      data-height = "48"
+      data-width = "64"
+      id = "youtube-player">
+ </div>
+
+ <script src="https://www.youtube.com/iframe_api"></script>
+ <script type="text/javascript">
+   function onYouTubeIframeAPIReady() {
+     var ctrlq = document.getElementById("youtube-player");
+     var player = new YT.Player('youtube-player', {
+       height: ctrlq.dataset.height,
+       width: ctrlq.dataset.width,
+       events: {
+         'onReady': function(e) {
+           e.target.cueVideoById({
+             videoId: ctrlq.dataset.video,
+             startSeconds: ctrlq.dataset.startseconds,
+             endSeconds: ctrlq.dataset.endseconds
+           });
+         }
+       }
+     });
+   }
+ </script>
 </div>
 </div>
 
