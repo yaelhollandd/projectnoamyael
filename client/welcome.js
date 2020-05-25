@@ -135,7 +135,39 @@ function redirect()
 
     }
 
-    if (id2>220 )
+    if  (id2>=221 && id2<=230)   {
+        if(check == false ) {    
+            
+            alert("Invalid device - To perform the experiment you need to switch to a Mobile device");
+        }
+        if(check == true ) {    
+            window.location.href = 'declaration1.html';
+            }
+
+    }
+
+    if  (id2>=231 && id2<=240)   {
+        if(check == false ) {    
+            
+            alert("Invalid device - To perform the experiment you need to switch to a Mobile device");
+        }
+        if(check == true ) {    
+            window.location.href = 'declaration.html';
+            }
+
+    }
+
+    if  (id2>=241 && id2<=250)   {
+        if(check == false ) {    
+            window.location.href = 'declaration1.html';
+        }
+        if(check == true ) {    
+            alert("Invalid device - To perform the experiment you need to switch to a PC device");
+            }
+
+    }
+
+    if (id2>250 )
     alert("Invalid ID");
     if (id2<1 )
     alert("Invalid ID");
