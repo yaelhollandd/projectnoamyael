@@ -255,9 +255,21 @@ function redirect()
     
           
       }
+
+      if  (id2>=321 && id2<=340)   {
+        if(check == false ) {    
+            
+            alert("Invalid device - To perform the experiment you need to switch to a Mobile device");
+        }
+        if(check == true ) {    
+            window.location.href = 'declaration1.html';
+            }
+
+    }
+
     
 
-    if (id2>320 )
+    if (id2>340 )
     alert("Invalid ID");
     if (id2<1 )
     alert("Invalid ID");
