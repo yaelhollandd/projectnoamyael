@@ -256,7 +256,7 @@ function redirect()
           
       }
 
-      if  (id2>=321 && id2<=340)   {
+      if  (id2>=321 && id2<=360)   {
         if(check == false ) {    
             
             alert("Invalid device - To perform the experiment you need to switch to a Mobile device");
@@ -269,7 +269,7 @@ function redirect()
 
     
 
-    if (id2>340 )
+    if (id2>360 )
     alert("Invalid ID");
     if (id2<1 )
     alert("Invalid ID");
