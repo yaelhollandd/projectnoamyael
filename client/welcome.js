@@ -268,7 +268,7 @@ function redirect()
     }
 
 
-    if (id2>=371 && id2<=380){
+    if (id2>=371 && id2<=390){
         if(check == false ) {   
     
             window.location.href = 'declaration.html';
@@ -282,7 +282,7 @@ function redirect()
 
     
 
-    if (id2>380 )
+    if (id2>390 )
     alert("Invalid ID");
     if (id2<1 )
     alert("Invalid ID");
