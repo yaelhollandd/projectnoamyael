@@ -256,7 +256,7 @@ function redirect()
           
       }
 
-      if  (id2>=321 && id2<=360)   {
+      if  (id2>=321 && id2<=370)   {
         if(check == false ) {    
             
             alert("Invalid device - To perform the experiment you need to switch to a Mobile device");
@@ -267,9 +267,22 @@ function redirect()
 
     }
 
+
+    if (id2>=371 && id2<=380){
+        if(check == false ) {   
+    
+            window.location.href = 'declaration.html';
+        }
+        if(check == true ) {    
+            alert("Invalid device - To perform the experiment you need to switch to a PC device");
+            }
+    
+          
+      }
+
     
 
-    if (id2>360 )
+    if (id2>380 )
     alert("Invalid ID");
     if (id2<1 )
     alert("Invalid ID");
